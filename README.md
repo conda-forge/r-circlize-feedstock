@@ -14,9 +14,8 @@ Summary: Circular layout is an efficient way for the visualization of huge  amou
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-circlize-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-circlize-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-circlize-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-circlize-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-circlize-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-circlize-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-circlize-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-circlize-feedstock)
 
 Current release info
 ====================
