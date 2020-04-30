@@ -1,4 +1,4 @@
-{% set version = '0.4.8' %}
+{% set version = "0.4.9" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/circlize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/circlize/circlize_{{ version }}.tar.gz
-  sha256: 22d6908b9d2e496105d9b70b73a74152398e5e9e38c60042ffe041df2b4c794b
+  sha256: 70d419a71a0161149ff7b59ad5b9a904f88dbe234f79796b49a0150bec262491
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -22,7 +22,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
     - r-globaloptions >=0.1.0
@@ -42,17 +42,12 @@ test:
 about:
   home: https://github.com/jokergoo/circlize, http://jokergoo.github.io/circlize_book/book/
   license: MIT
-  summary: Circular layout is an efficient way for the visualization of huge  amounts of information.
-    Here this package provides an implementation  of circular layout generation in R
-    as well as an enhancement of available  software. The flexibility of the package
-    is based on the usage of low-level  graphics functions such that self-defined high-level
-    graphics can be easily  implemented by users for specific purposes. Together with
-    the seamless  connection between the powerful computational and visual environment
-    in R,  it gives users more convenience and freedom to design figures for  better
-    understanding complex patterns behind multiple dimensional data.
+  summary: Circular layout is an efficient way for the visualization of huge  amounts of information. Here this package provides an implementation  of circular layout generation in R as well as an enhancement of available  software. The flexibility of the package is based on the usage of low-level  graphics functions such
+    that self-defined high-level graphics can be easily  implemented by users for specific purposes. Together with the seamless  connection between the powerful computational and visual environment in R,  it gives users more convenience and freedom to design figures for  better understanding complex patterns behind multiple
+    dimensional data.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
