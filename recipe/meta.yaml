@@ -1,4 +1,4 @@
-{% set version = "0.4.15" %}
+{% set version = "0.4.16" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/circlize_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/circlize/circlize_{{ version }}.tar.gz
-  sha256: d602d55313fe7c675109153d6ed3b99bdba5292e1deefed71d5a21e0db595cc7
+  sha256: 16dc32c7704906d13a9e5281bb396e92fb89a6b17fa5e201953240726b650b67
 
 build:
   merge_build_host: true  # [win]
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
