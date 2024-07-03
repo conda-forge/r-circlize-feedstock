@@ -1,6 +1,5 @@
 {% set version = "0.4.16" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-circlize
@@ -13,8 +12,7 @@ source:
   sha256: 16dc32c7704906d13a9e5281bb396e92fb89a6b17fa5e201953240726b650b67
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
